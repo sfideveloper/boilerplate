@@ -51,7 +51,7 @@ let optionsAnalyticsEnergy = {
             shade: "dark",
             type: "horizontal",
             shadeIntensity: 1,
-            gradientToColors: ["#0010F7", "#1BE7FF"],
+            gradientToColors: ["#02A5A1 ", "#1BE7FF"],
             inverseColors: true,
             opacityFrom: 1,
             opacityTo: 1,
@@ -80,7 +80,7 @@ let optionsAnalyticsExpenses = {
             enabled: false,
         },
     },
-    colors: ["#0010F7", "#55B1F3", "#1BE7FF"],
+    colors: ["#02A5A1 ", "#55B1F3", "#1BE7FF"],
 
     labels: ["Marketing", "Payments", "Bills"],
 
@@ -170,7 +170,7 @@ let optionsAnalyticsMarketplace = {
             enabled: false,
         },
     },
-    colors: ["#28a745", "#0010F7", "#FFC700"],
+    colors: ["#28a745", "#02A5A1 ", "#FFC700"],
 
     labels: ["Ebay", "Web", "Amazon"],
 
@@ -297,7 +297,7 @@ let optionsAnalyticsRevenue1 = {
             endingShape: "rounded",
         },
         colors: {
-            backgroundBarColors: ["#0063F7", "#28a745"],
+            backgroundBarColors: ["#009490", "#28a745"],
         },
     },
 
@@ -472,7 +472,7 @@ let optionsAnalyticsRevenue3 = {
             enabled: false,
         },
     },
-    colors: ["#0063F7"],
+    colors: ["#009490"],
     labels: {
         style: {
             fontSize: "14px",
@@ -498,7 +498,7 @@ let optionsAnalyticsRevenue3 = {
     markers: {
         strokeWidth: 0,
         size: 0,
-        colors: ["#0063F7", "#1BE7FF"],
+        colors: ["#009490", "#1BE7FF"],
         hover: {
             sizeOffset: 1,
         },
@@ -579,7 +579,7 @@ let optionsAnalyticsTraffic = {
         size: 0,
     },
 
-    colors: ["#0063F7", "#FF0022", "#28a745"],
+    colors: ["#009490", "#FF0022", "#28a745"],
 
     labels: ["Marketing", "Payments", "Bills"],
 
@@ -632,7 +632,7 @@ let optionsAnalyticsVisit = {
             enabled: false,
         },
     },
-    colors: ["#1BE7FF", "#0010F7", "#28a745"],
+    colors: ["#1BE7FF", "#02A5A1 ", "#28a745"],
 
     labels: ["Desktop", "Tablet", "Mobile"],
 
@@ -730,7 +730,7 @@ let optionsAnalyticsVisiters = {
             enabled: false,
         },
     },
-    colors: ["#0063F7", "#28a745"],
+    colors: ["#009490", "#28a745"],
     labels: {
         style: {
             fontSize: "14px",

@@ -105,14 +105,14 @@ let optionsStatisticsRevenue2 = {
             enabled: false,
         },
     },
-    colors: ["#0063F7"],
+    colors: ["#009490"],
     stroke: {
         lineCap: "round",
         width: 2,
     },
     markers: {
         size: 1,
-        strokeColors: "#0063F7",
+        strokeColors: "#009490",
         strokeOpacity: 0,
     },
     tooltip: {
@@ -369,7 +369,7 @@ let optionsStatisticsOrderVertical = {
     dataLabels: {
         enabled: false,
     },
-    colors: ["#0010F7"],
+    colors: ["#02A5A1 "],
     xaxis: {
         labels: {
             show: false,
@@ -756,7 +756,7 @@ let optionsStatisticsTraffic = {
             enabled: false,
         },
     },
-    colors: ["#0063F7"],
+    colors: ["#009490"],
     labels: {
         style: {
             fontSize: "14px",
@@ -786,7 +786,7 @@ let optionsStatisticsTraffic = {
     markers: {
         strokeWidth: 0,
         size: 0,
-        colors: ["#0063F7", "#1BE7FF"],
+        colors: ["#009490", "#1BE7FF"],
         hover: {
             sizeOffset: 1,
         },
@@ -908,7 +908,7 @@ let optionsStatisticsUsers = {
     dataLabels: {
         enabled: false,
     },
-    colors: ["#0063F7"],
+    colors: ["#009490"],
     xaxis: {
         labels: {
             show: false,

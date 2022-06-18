@@ -67,7 +67,7 @@ body.dark .hp-dark-block.hp-dir-block {
   display: none;
 }
 body.dark a {
-  color: #0063f7;
+  color: #009490;
 }
 body.dark.app-layout-bg:before {
   background: #141414;
@@ -107,11 +107,11 @@ body.dark .hp-theme-customizer-container-body-item-svg.active {
   border-color: #C2C2C2;
 }
 body.dark ::-moz-selection {
-  background: #0010f7;
+  background: #02A5A1 ;
   color: #FFFFFF;
 }
 body.dark ::selection {
-  background: #0010f7;
+  background: #02A5A1 ;
   color: #FFFFFF;
 }
 body.dark h1,
@@ -276,7 +276,7 @@ body.dark .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .subme
   background: #ffffff;
 }
 body.dark .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .submenu-children li > a.active:not(.submenu-item) {
-  background: #0010f7;
+  background: #02A5A1 ;
 }
 body.dark .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .submenu-children li > a.active > span {
   color: #ffffff;
@@ -288,7 +288,7 @@ body.dark .hp-sidebar-dropdown-container ul li a {
   color: #C2C2C2;
 }
 body.dark .hp-sidebar-dropdown-container ul li a:before {
-  background: #0010f7;
+  background: #02A5A1 ;
 }
 body.dark .hp-sidebar-dropdown-container ul li a:hover {
   color: #FFFFFF;
@@ -437,7 +437,7 @@ body.dark .dropdown-item:disabled {
 body.dark .navbar-light .navbar-brand,
 body.dark .navbar-light .navbar-nav .show > .nav-link,
 body.dark .navbar-light .navbar-nav .nav-link.active {
-  color: #0063f7;
+  color: #009490;
 }
 body.dark .navbar-light .navbar-nav .nav-link {
   color: #FFFFFF;
@@ -448,17 +448,17 @@ body.dark .page-link {
 }
 body.dark .page-link:hover {
   background: #141414;
-  color: #0063f7;
-  border-color: #0063f7;
+  color: #009490;
+  border-color: #009490;
 }
 body.dark .page-item.active .page-link {
   background: #141414;
-  color: #0063f7;
-  border-color: #0063f7;
+  color: #009490;
+  border-color: #009490;
 }
 body.dark .page-link:focus {
   background: #141414;
-  color: #0063f7;
+  color: #009490;
 }
 body.dark .page-item.disabled .page-link {
   background: #1F1F1F;
@@ -470,8 +470,8 @@ body.dark .form-check-input {
   border-color: #333333;
 }
 body.dark .form-check-input:checked {
-  background-color: #0010f7;
-  border-color: #0010f7;
+  background-color: #02A5A1 ;
+  border-color: #02A5A1 ;
 }
 body.dark .form-check-input:disabled {
   background: #1F1F1F;
@@ -494,7 +494,7 @@ body.dark .form-check-input[type=radio] ~ label:before {
   border-color: #333333;
 }
 body.dark .form-check-input:checked[type=radio] ~ label:before {
-  border-color: #0010f7;
+  border-color: #02A5A1 ;
 }
 body.dark .form-check-input:disabled[type=radio] ~ label:before {
   border-color: #333333;
@@ -576,8 +576,8 @@ body.dark .list-group-item {
   border-color: #333333;
 }
 body.dark .list-group-item.active {
-  background: #0010f7;
-  border-color: #0010f7;
+  background: #02A5A1 ;
+  border-color: #02A5A1 ;
 }
 body.dark .list-group-item.disabled,
 body.dark .list-group-item:disabled {
@@ -677,7 +677,7 @@ body.dark .nav-link {
   color: #FFFFFF;
 }
 body.dark .nav-link:hover, body.dark .nav-link:focus {
-  color: #0063f7;
+  color: #009490;
 }
 body.dark .nav-link.active {
   color: #FFFFFF;
@@ -763,7 +763,7 @@ body.dark [disabled] .spinner-grow {
   background: #474747;
 }
 body.dark .hp-pricing-item-special button {
-  color: #0010f7 !important;
+  color: #02A5A1  !important;
 }
 body.dark .hp-pricing-item-special button:hover {
   background: #FFFFFF !important;
@@ -773,7 +773,7 @@ body.dark .hp-landing-features-slide:before, body.dark .hp-landing-features-slid
   background: linear-gradient(to right, rgba(31, 31, 31, 0), rgb(31, 31, 31));
 }
 body.dark .hp-profile-menu-body .active {
-  background: #0010f7;
+  background: #02A5A1 ;
   color: #FFFFFF !important;
 }
 body.dark .hp-lock-screen .hp-screen-bg {
@@ -788,10 +788,10 @@ body.dark .hp-authentication-page .hp-or-line:before {
   background-color: #333333;
 }
 body.dark .hp-faq-tabs .ant-tabs-nav .ant-tabs-tab-active svg {
-  fill: #0063f7 !important;
+  fill: #009490 !important;
 }
 body.dark .hp-faq-tabs .ant-tabs-nav .ant-tabs-tab-active span {
-  color: #0063f7 !important;
+  color: #009490 !important;
 }
 body.dark .hp-invoice-card p {
   color: #C2C2C2;

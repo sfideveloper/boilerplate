@@ -1,0 +1,83 @@
+.v-divider {
+    border-left: 1px solid #1D1D33;
+    margin: 0 16px;
+}
+
+.flag-en {
+    background-image: url("../flag/en.svg");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flag-id {
+    background-image: url("../flag/id.svg");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flag-ar {
+    background-image: url("../flag/ar.svg");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-carousel {
+    width: 100%;
+    height: 600px;
+    padding: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-carousel .hero-card {
+    padding: 48px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-carousel .hero-title {
+    color: #02A5A1;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-carousel {
+        height: 600px;
+        padding: 32px;
+    }
+}
+
+.img-gallery{
+    width: 100%;
+    height: 240px;
+}

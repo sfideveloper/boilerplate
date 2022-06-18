@@ -26,10 +26,10 @@ body.horizontal-active .hp-horizontal-menu.search-active {
 }
 .hp-horizontal-menu > ul > li > a:hover, .hp-horizontal-menu > ul > li > a:focus {
   background: #ebfafa;
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-horizontal-menu > ul > li > a.active {
-  background: #0010f7;
+  background: #02A5A1 ;
   color: #ffffff;
 }
 .hp-horizontal-menu > ul > li ul {
@@ -69,14 +69,14 @@ body.horizontal-active .hp-horizontal-menu.search-active {
 }
 .hp-horizontal-menu > ul > li ul li a:hover, .hp-horizontal-menu > ul > li ul li a:focus {
   background: none;
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-horizontal-menu > ul > li ul li a.dropdown-item.active {
   background: none !important;
 }
 .hp-horizontal-menu > ul > li ul li a.active {
   background: #ebfafa;
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-horizontal-menu ul > li {
   position: relative;

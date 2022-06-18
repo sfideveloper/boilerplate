@@ -224,13 +224,13 @@ body.collapse-btn-none.collapsed-active .hp-sidebar-collapse-button {
           transform: rotate(45deg) translateX(-2.5px);
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a.active {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a.active i {
-  color: #0010f7 !important;
+  color: #02A5A1  !important;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a.active > span > span {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a.arrow-active .menu-arrow:before {
   -webkit-transform: rotate(45deg) translateX(2.5px);
@@ -244,19 +244,19 @@ body.collapse-btn-none.collapsed-active .hp-sidebar-collapse-button {
   top: 52%;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover i {
-  color: #0010f7 !important;
+  color: #02A5A1  !important;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover > span {
-  color: #0010f7 !important;
+  color: #02A5A1  !important;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover > span > span {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover .menu-arrow:before, .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li a:hover .menu-arrow:after {
-  background-color: #0010f7;
+  background-color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .submenu-children {
   display: none;
@@ -285,13 +285,13 @@ body.collapse-btn-none.collapsed-active .hp-sidebar-collapse-button {
           transform: translate(0, -50%);
   right: 5px;
   width: 2px;
-  background: #0010f7;
+  background: #02A5A1 ;
   height: 0%;
   display: block;
   border-radius: 2px;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .submenu-children li > a.active > span {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-container .hp-sidebar-header-menu > ul > li > ul li .submenu-children li > a.active:not(.submenu-item) {
   background: #ebfafa;
@@ -384,13 +384,13 @@ body.collapse-btn-none.collapsed-active .hp-sidebar-collapse-button {
   opacity: 0;
 }
 .hp-sidebar-dropdown-container ul li a:hover {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-dropdown-container ul li a:hover .menu-arrow:before, .hp-sidebar-dropdown-container ul li a:hover .menu-arrow:after {
-  background-color: #0010f7;
+  background-color: #02A5A1 ;
 }
 .hp-sidebar-dropdown-container ul li a.active {
-  color: #0010f7;
+  color: #02A5A1 ;
 }
 .hp-sidebar-dropdown-container ul li a.active:before {
   opacity: 1;

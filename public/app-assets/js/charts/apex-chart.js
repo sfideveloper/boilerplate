@@ -99,7 +99,7 @@ let optionsAreaChart = {
             radius: 12,
         },
     },
-    colors: ["#EBFAFA", "#55B1F3", "#0010F7"],
+    colors: ["#EBFAFA", "#55B1F3", "#02A5A1 "],
 
     yaxis: {
         labels: {
@@ -202,7 +202,7 @@ let optionsBarChart = {
             radius: 12,
         },
     },
-    colors: ["#0063F7"],
+    colors: ["#009490"],
 
     yaxis: {
         reversed: $("body").hasClass("direction-end") ? true : false,
@@ -472,7 +472,7 @@ let optionsColumnChart = {
             endingShape: "rounded",
         },
         colors: {
-            backgroundBarColors: ["#0063F7", "#28a745"],
+            backgroundBarColors: ["#009490", "#28a745"],
         },
     },
 
@@ -557,7 +557,7 @@ let optionsDonutChart = {
             enabled: false,
         },
     },
-    colors: ["#0010F7", "#55B1F3", "#1BE7FF"],
+    colors: ["#02A5A1 ", "#55B1F3", "#1BE7FF"],
 
     labels: ["Marketing", "Payments", "Bills"],
 
@@ -716,13 +716,13 @@ let optionsHeatmapChart = {
                         from: 21,
                         to: 30,
                         name: "20-30",
-                        color: "#0063F7",
+                        color: "#009490",
                     },
                     {
                         from: 31,
                         to: 40,
                         name: "30-40",
-                        color: "#0010F7",
+                        color: "#02A5A1 ",
                     },
                 ],
             },
@@ -810,7 +810,7 @@ let optionsLineChart = {
             enabled: false,
         },
     },
-    colors: ["#0063F7", "#1BE7FF"],
+    colors: ["#009490", "#1BE7FF"],
     labels: {
         style: {
             fontSize: "14px",
@@ -831,7 +831,7 @@ let optionsLineChart = {
     markers: {
         strokeWidth: 0,
         size: 6,
-        colors: ["#0063F7", "#1BE7FF"],
+        colors: ["#009490", "#1BE7FF"],
         hover: {
             sizeOffset: 1,
         },
@@ -936,7 +936,7 @@ let optionsRadarChart = {
         size: 0,
     },
 
-    colors: ["#0010F7", "#1BE7FF"],
+    colors: ["#02A5A1 ", "#1BE7FF"],
 
     labels: ["Marketing", "Payments", "Bills"],
 
@@ -992,7 +992,7 @@ let optionsRadialbarChart = {
             enabled: false,
         },
     },
-    colors: ["#28a745", "#0010F7", "#FFC700"],
+    colors: ["#28a745", "#02A5A1 ", "#FFC700"],
 
     labels: ["Ebay", "Amazon", "Web"],
 
@@ -1228,7 +1228,7 @@ let optionsScatterChart = {
             radius: 12,
         },
     },
-    colors: ["#28a745", "#55B1F3", "#0010F7"],
+    colors: ["#28a745", "#55B1F3", "#02A5A1 "],
 
     yaxis: {
         labels: {
@@ -1262,7 +1262,7 @@ let optionsEcommerceEarningDonutCard = {
             enabled: false,
         },
     },
-    colors: ["#0063F7", "#98FFE0", "#1BE7FF"],
+    colors: ["#009490", "#98FFE0", "#1BE7FF"],
 
     labels: ["Online", "Offline", "Marketing"],
 

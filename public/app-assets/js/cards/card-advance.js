@@ -62,7 +62,7 @@ let optionsBrowserEdgeChart = {
             bottom: -15,
         },
     },
-    colors: ["#0010F7"],
+    colors: ["#02A5A1 "],
     plotOptions: {
         radialBar: {
             hollow: {
@@ -317,7 +317,7 @@ let optionsEarningsChart = {
         },
     },
 
-    colors: ["#28a745", "#1BE7FF", "#0010F7"],
+    colors: ["#28a745", "#1BE7FF", "#02A5A1 "],
     fill: {
         type: "solid",
     },
@@ -368,7 +368,7 @@ let optionsExpensesDonutCard = {
             enabled: false,
         },
     },
-    colors: ["#0010F7", "#55B1F3", "#1BE7FF"],
+    colors: ["#02A5A1 ", "#55B1F3", "#1BE7FF"],
 
     labels: ["Marketing", "Payments", "Bills"],
 
