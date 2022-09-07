@@ -14,7 +14,7 @@ class CreateSuperPaymentSubscribeTable extends Migration
     public function up()
     {
         Schema::create('super_payment_subscribe', function (Blueprint $table) {
-            $table->id_payment_subscribe();
+            $table->id('id_payment_subscribe');
         });
     }
 
