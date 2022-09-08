@@ -14,8 +14,12 @@ class CreateInvPoDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_po_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_po_detail');
+            $table->integer('id_po');
+            $table->integer('id_material');
+            $table->integer('quantity');
+            $table->integer('harga_satuan');
+            $table->integer('total')->nullable()->default(null);
         });
     }
 

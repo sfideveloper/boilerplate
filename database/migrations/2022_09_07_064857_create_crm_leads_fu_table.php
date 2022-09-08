@@ -14,9 +14,9 @@ class CreateCrmLeadsFuTable extends Migration
     public function up()
     {
         Schema::create('crm_leads_fu', function (Blueprint $table) {
-            $table->id('id_leads_fu');
+            $table->bigIncrements('id_leads_fu');
             $table->integer('id_customer');
-            $table->date("time_leads");
+            $table->date("time_leads")->nullable()->default(null);
             $table->text('note')->nullable()->default(null);
             $table->text('note_spv')->nullable()->default(null);
             $table->text('note_manager')->nullable()->default(null);

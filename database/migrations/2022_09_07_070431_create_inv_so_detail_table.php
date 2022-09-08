@@ -14,8 +14,12 @@ class CreateInvSoDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_so_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_so_detail');
+            $table->integer('id_so');
+            $table->integer('id_material');
+            $table->integer('quantity');
+            $table->integer('harga_satuan');
+            $table->integer('total')->nullable()->default(null);
         });
     }
 

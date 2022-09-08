@@ -14,8 +14,12 @@ class CreateInvReturnPoTable extends Migration
     public function up()
     {
         Schema::create('inv_return_po', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_return_po');
+            $table->integer('id_faktur_po');
+            $table->string('nomor_return');
+            $table->date('tanggal_dibuat');
+            $table->string('alasan',255);
+            $table->tinyInteger('status_diterima_kembali',4)->nullable()->default(0);
         });
     }
 

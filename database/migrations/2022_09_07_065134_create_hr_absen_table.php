@@ -14,8 +14,10 @@ class CreateHrAbsenTable extends Migration
     public function up()
     {
         Schema::create('hr_absen', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_client');
+            $table->integer('id_user');
+            $table->date('tanggal');
+            $table->string('status',10);
         });
     }
 

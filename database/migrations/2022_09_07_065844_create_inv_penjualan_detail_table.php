@@ -14,8 +14,12 @@ class CreateInvPenjualanDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_penjualan_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_penjualan_detail');
+            $table->integer('id_material');
+            $table->integer('quantity');
+            $table->integer('harga_satuan');
+            $table->integer('id_penjualan');
+            $table->integer('total');
         });
     }
 

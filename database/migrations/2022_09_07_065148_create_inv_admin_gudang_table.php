@@ -14,8 +14,10 @@ class CreateInvAdminGudangTable extends Migration
     public function up()
     {
         Schema::create('inv_admin_gudang', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_admin_gudang');
+            $table->integer('id_gudang');
+            $table->integer('id_user');
+            $table->dateTime('registered');
         });
     }
 

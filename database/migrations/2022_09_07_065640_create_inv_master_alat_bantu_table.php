@@ -14,8 +14,10 @@ class CreateInvMasterAlatBantuTable extends Migration
     public function up()
     {
         Schema::create('inv_master_alat_bantu', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_alat_bantu');
+            $table->integer('id_client');
+            $table->string('nama_alat_bantu',255);
+            $table->integer('stok_awal');
         });
     }
 

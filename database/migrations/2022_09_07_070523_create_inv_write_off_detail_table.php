@@ -14,8 +14,10 @@ class CreateInvWriteOffDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_write_off_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_write_off_detail');
+            $table->integer('id_write_off_po');
+            $table->integer('quantity');
+            $table->integer('id_material');
         });
     }
 

@@ -14,8 +14,10 @@ class CreateInvReturnPenjualanDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_return_penjualan_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_return_penjualan_detail');
+            $table->integer('quantity');
+            $table->integer('id_return_penjualan');
+            $table->integer('id_material');
         });
     }
 

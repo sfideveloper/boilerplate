@@ -14,8 +14,14 @@ class CreateInvWriteOffPoTable extends Migration
     public function up()
     {
         Schema::create('inv_write_off_po', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_write_off_po');
+            $table->integer('id_po');
+            $table->date('tanggal_dibuat');
+            $table->string('alasan',255);
+            $table->integer('biaya_lain');
+            $table->integer('diskon');
+            $table->tinyInteger('status_approve',4)->nullable()->default(0);
+            
         });
     }
 

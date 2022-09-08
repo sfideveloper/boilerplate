@@ -14,8 +14,10 @@ class CreateInvMasterSatuanTable extends Migration
     public function up()
     {
         Schema::create('inv_master_satuan', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_satuan');
+            $table->integer('id_client');
+            $table->string('nama_satuan',150);
+            $table->dateTime('registered',1);
         });
     }
 

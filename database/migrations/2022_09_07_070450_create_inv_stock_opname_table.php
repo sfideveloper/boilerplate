@@ -14,8 +14,14 @@ class CreateInvStockOpnameTable extends Migration
     public function up()
     {
         Schema::create('inv_stock_opname', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_stock_opname');
+            $table->string('nomor_stock_opname',100);
+            $table->integer('id_gudang');
+            $table->date('date_start');
+            $table->date('date_end');
+            $table->tinyInteger('status_stock_opname',4)->default(0)->comment('0 : belum dimulai 1 : dimulai 2 : selesai');
+            $table->integer('pengecekan_ke')->default(1);
+            $table->date('registered')->nullable()->default(null);
         });
     }
 

@@ -14,8 +14,10 @@ class CreateInvReturnDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_return_detail', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_return_detail');
+            $table->integer('quantity');
+            $table->integer('id_return_po');
+            $table->integer('id_material');
         });
     }
 
