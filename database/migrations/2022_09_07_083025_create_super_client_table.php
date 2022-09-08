@@ -28,7 +28,7 @@ class CreateSuperClientTable extends Migration
             $table->string('postal_code')->nullable()->default(null);
             $table->text('web_client')->nullable()->default(null);
             $table->text('nama_dalam_perjanjian')->nullable()->default(null);
-            $table->string('jabatan',100)->nullable()->default(null);
+            $table->string('jabatan')->nullable()->default(null);
             $table->text('logo_url')->nullable()->default(null);
             $table->dateTime('registered');
         });

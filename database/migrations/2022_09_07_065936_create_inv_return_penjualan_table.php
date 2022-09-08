@@ -16,12 +16,12 @@ class CreateInvReturnPenjualanTable extends Migration
         Schema::create('inv_return_penjualan', function (Blueprint $table) {
             $table->bigIncrements('id_return_penjualan');
             $table->integer('id_faktur_penjualan');
-            $table->string('nomor_return_penjualan',50);
+            $table->string('nomor_return_penjualan');
             $table->date('tanggal_dibuat');
-            $table->string('alasan',255);
+            $table->string('alasan');
             $table->integer('biaya_lain');
             $table->integer('diskon');
-            $table->tinyInteger('status_dikirim_kembali',4)->nullable()->default(0);
+            $table->tinyInteger('status_dikirim_kembali')->nullable()->default(0);
         });
     }
 

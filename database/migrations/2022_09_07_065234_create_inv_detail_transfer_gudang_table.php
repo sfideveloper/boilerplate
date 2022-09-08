@@ -20,7 +20,7 @@ class CreateInvDetailTransferGudangTable extends Migration
             $table->integer('total')->nullable()->default(null)->comment('pada saat permintaan, total = aktual harga real q_permintaan pada saat pengiriman, total = aktual harga real q_pengiriman');
             $table->integer('quantity_pengiriman')->nullable()->default(null);
             $table->text('keterangan')->nullable()->default(null);
-            $table->tinyInteger('status_approval',4);
+            $table->tinyInteger('status_approval');
             $table->integer('id_transfer_gudang');
         });
     }

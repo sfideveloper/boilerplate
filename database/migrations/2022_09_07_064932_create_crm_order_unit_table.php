@@ -44,7 +44,6 @@ class CreateCrmOrderUnitTable extends Migration
             $table->text('dokumen_data')->nullable()->default(null)->comment('json, kelengkapan dokumen');
             $table->tinyInteger('status_over_kontrak')->nullable()->default(null)->comment('0 : tidak, 1 : waiting, 2: approve');
             $table->date('tanggal_AJB')->nullable()->default(null);
-            $table->date('tanggal_AJB')->nullable()->default(null);
             $table->tinyInteger('status_akad_kredit')->nullable()->default(null);
             $table->integer('nominal_kredit')->nullable()->default(null);
             $table->string('nomor_sp3k')->nullable()->default(null);

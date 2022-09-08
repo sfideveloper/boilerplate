@@ -15,20 +15,20 @@ class CreateSuperUserTable extends Migration
     {
         Schema::create('super_user', function (Blueprint $table) {
             $table->id();
-            $table->integer('role_id', 11)->nullable()->default(null);
-            $table->integer('id_client', 11);
-            $table->integer('id_regency', 11);
-            $table->integer('id_district', 11);
-            $table->string('nama_user', 20);
-            $table->string('email_user', 30);
+            $table->integer('id_client');
+            $table->integer('id_regency');
+            $table->integer('id_district');
+            $table->string('nama_user');
+            $table->string('email_user');
             $table->text('password');
-            $table->string('hp_user', 16);
-            $table->string('alamat_user', 191);
-            $table->char('jk',1)->nullable()->default(null);
-            $table->string('tempat_lahir', 200)->nullable()->default(null);
+            $table->string('hp_user');
+            $table->string('alamat_user');
+            $table->char('jk')->nullable()->default(null);
+            $table->string('tempat_lahir')->nullable()->default(null);
             $table->date('tanggal_lahir')->nullable()->default(null);
-            $table->tinyInteger('status', 4)->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamp('email_verified_at')->nullable()->default(null);
+            $table->timestamps();            
         });
     }
 

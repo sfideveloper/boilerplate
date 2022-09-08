@@ -17,7 +17,7 @@ class CreateHrAbsenTable extends Migration
             $table->bigIncrements('id_client');
             $table->integer('id_user');
             $table->date('tanggal');
-            $table->string('status',10);
+            $table->string('status');
         });
     }
 

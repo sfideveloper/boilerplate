@@ -15,9 +15,9 @@ class CreateFaAkunTable extends Migration
     {
         Schema::create('fa_akun', function (Blueprint $table) {
             $table->bigIncrements('id_akun');
-            $table->string('nama_akun',100);
-            $table->string('type',50)->comment('kas, bank');
-            $table->string('no_rekening',50);
+            $table->string('nama_akun');
+            $table->string('type')->comment('kas, bank');
+            $table->string('no_rekening');
         });
     }
 

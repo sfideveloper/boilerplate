@@ -16,12 +16,12 @@ class CreateInvTransferGudangTable extends Migration
         Schema::create('inv_transfer_gudang', function (Blueprint $table) {
             $table->bigIncrements('id_transfer_gudang');
             $table->integer('id_gudang_pengirim');
-            $table->string('nomor_permintaan',50);
+            $table->string('nomor_permintaan');
             $table->dateTime('tanggal_permintaan');
-            $table->tinyInteger('status_approval',4)->default(0)->comment('0 : no need approval 1 : need approval 2 : approved');
+            $table->tinyInteger('status_approval')->default(0)->comment('0 : no need approval 1 : need approval 2 : approved');
             $table->date('registered');
             $table->integer('id_gudang_penerima');
-            $table->tinyInteger('status_transit',4)->default(0)->comment('0 : belum dikirim 1 : perjalanan 2 : diterima');
+            $table->tinyInteger('status_transit')->default(0)->comment('0 : belum dikirim 1 : perjalanan 2 : diterima');
         });
     }
 

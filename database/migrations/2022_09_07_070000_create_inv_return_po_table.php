@@ -18,8 +18,8 @@ class CreateInvReturnPoTable extends Migration
             $table->integer('id_faktur_po');
             $table->string('nomor_return');
             $table->date('tanggal_dibuat');
-            $table->string('alasan',255);
-            $table->tinyInteger('status_diterima_kembali',4)->nullable()->default(0);
+            $table->string('alasan');
+            $table->tinyInteger('status_diterima_kembali')->nullable()->default(0);
         });
     }
 
