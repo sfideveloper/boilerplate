@@ -14,8 +14,8 @@ class CreateSuperPackageSubscribeTable extends Migration
     public function up()
     {
         Schema::create('super_package_subscribe', function (Blueprint $table) {
-            $table->bigIncrements('id_package_subscribe');
-            $table->string('nama_package_subscribe',30);
+            $table->id();
+            $table->timestamps();
         });
     }
 

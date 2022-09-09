@@ -28,7 +28,6 @@ class CreateSuperUserTable extends Migration
             $table->string('tempat_lahir', 200)->nullable()->default(null);
             $table->date('tanggal_lahir')->nullable()->default(null);
             $table->tinyInteger('status', 4)->default(1);
-            $table->timestamp('email_verified_at')->nullable()->default(null);
         });
     }
 

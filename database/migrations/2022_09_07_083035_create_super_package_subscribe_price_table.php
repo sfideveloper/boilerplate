@@ -14,7 +14,8 @@ class CreateSuperPackageSubscribePriceTable extends Migration
     public function up()
     {
         Schema::create('super_package_subscribe_price', function (Blueprint $table) {
-            $table->bigIncrements('id_package_subscribe_price');            
+            $table->id();
+            $table->timestamps();
         });
     }
 
