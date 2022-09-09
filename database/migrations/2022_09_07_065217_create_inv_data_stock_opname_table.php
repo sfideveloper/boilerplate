@@ -16,7 +16,7 @@ class CreateInvDataStockOpnameTable extends Migration
         Schema::create('inv_data_stock_opname', function (Blueprint $table) {
             $table->bigIncrements('id_detail_stock_opname');
             $table->integer('id_material');
-            $table->tinyInteger('status_material')->comment('0 : stock opname, 1 : temuan baru');
+            $table->tinyInteger('status_material',4)->comment('0 : stock opname, 1 : temuan baru');
             $table->integer('quantity');
             $table->integer('id_stock_opname');
             $table->timestamp('updated');

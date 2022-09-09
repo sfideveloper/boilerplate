@@ -27,8 +27,8 @@ class CreateInvFakturPoTable extends Migration
             $table->integer('diskon_pembatalan')->nullable()->default(null);
             $table->integer('total')->nullable()->default(null);
             $table->integer('dibayar')->nullable()->default(null);
-            $table->tinyInteger('status_return')->nullable()->default(0);
-            $table->tinyInteger('status_lunas_bayar')->nullable()->default(0);
+            $table->tinyInteger('status_return',4)->nullable()->default(0);
+            $table->tinyInteger('status_lunas_bayar',4)->nullable()->default(0);
         });
     }
 

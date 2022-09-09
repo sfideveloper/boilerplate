@@ -18,13 +18,13 @@ class CreateInvFakturPenjualanTable extends Migration
             $table->integer('id_penjualan');            
             $table->integer('nomor_faktur');
             $table->date('tanggal_dikirim');
-            $table->string('nama_pengirim');
+            $table->string('nama_pengirim',150);
             $table->date('jatuh_tempo');
             $table->integer('biaya_lain');
             $table->integer('diskon');
             $table->integer('total')->nullable()->default(null);
-            $table->char('status_return')->nullable()->default(0);
-            $table->tinyInteger('status_lunas_bayar')->nullable()->default(0);
+            $table->char('status_return',1)->nullable()->default(0);
+            $table->tinyInteger('status_lunas_bayar',4)->nullable()->default(0);
         });
     }
 

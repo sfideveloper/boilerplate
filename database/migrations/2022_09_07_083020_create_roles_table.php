@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuperPackageSubscribeTable extends Migration
+class CreateRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSuperPackageSubscribeTable extends Migration
      */
     public function up()
     {
-        Schema::create('super_package_subscribe', function (Blueprint $table) {
-            $table->bigIncrements('id_package_subscribe');
-            $table->string('nama_package_subscribe',30);
+        Schema::create('roles', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name',100)->nullable()->default(null);
         });
     }
 
@@ -26,6 +26,6 @@ class CreateSuperPackageSubscribeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('super_package_subscribe');
+        Schema::dropIfExists('roles');
     }
 }

@@ -17,7 +17,7 @@ class CreateCrmTargetUnitTable extends Migration
             $table->bigIncrements('id_target_unit');
             $table->integer('id_customer');
             $table->integer('id_unit');
-            $table->tinyInteger('status_utama');
+            $table->tinyInteger('status_utama',4);
             $table->dateTime('registered');
         });
     }
