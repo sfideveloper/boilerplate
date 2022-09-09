@@ -14,10 +14,8 @@ class CreateInvMasterKategoriMaterialTable extends Migration
     public function up()
     {
         Schema::create('inv_master_kategori_material', function (Blueprint $table) {
-            $table->bigIncrements('id_kategori_material');
-            $table->integer('id_client')->nullable()->default(null);
-            $table->string('nama_kategori');
-            $table->dateTime('registered')->nullable();
+            $table->id();
+            $table->timestamps();
         });
     }
 

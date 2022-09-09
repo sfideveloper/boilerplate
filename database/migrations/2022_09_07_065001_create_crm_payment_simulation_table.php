@@ -14,14 +14,8 @@ class CreateCrmPaymentSimulationTable extends Migration
     public function up()
     {
         Schema::create('crm_payment_simulation', function (Blueprint $table) {
-            $table->bigIncrements('id_payment_simulation');
-            $table->integer('id_order_unit')->nullable()->default(null);
-            $table->integer('id_customer');
-            $table->integer('id_unit')->nullable()->default(null);
-            $table->integer('id_type_transaction_unit')->nullable()->default(null);
-            $table->dateTime('date_payment')->nullable()->default(null);
-            $table->integer('nominal_payment')->nullable()->default(null);
-            $table->text('note')->nullable()->default(null);
+            $table->id();
+            $table->timestamps();
         });
     }
 

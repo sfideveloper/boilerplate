@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInvSoDetailTable extends Migration
+class CreateInvMaskerAlatBantuTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateInvSoDetailTable extends Migration
      */
     public function up()
     {
-        Schema::create('inv_so_detail', function (Blueprint $table) {
+        Schema::create('inv_masker_alat_bantu', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateInvSoDetailTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inv_so_detail');
+        Schema::dropIfExists('inv_masker_alat_bantu');
     }
 }

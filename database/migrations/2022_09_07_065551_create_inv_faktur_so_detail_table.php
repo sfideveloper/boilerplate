@@ -14,12 +14,8 @@ class CreateInvFakturSoDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_faktur_so_detail', function (Blueprint $table) {
-            $table->bigIncrements('id_faktur_so_detail');
-            $table->integer('id_faktur_so');
-            $table->integer('quantity');
-            $table->integer('id_material');
-            $table->integer('harga_satuan')->nullable()->default(null);
-            $table->integer('total')->nullable()->default(null);
+            $table->id();
+            $table->timestamps();
         });
     }
 

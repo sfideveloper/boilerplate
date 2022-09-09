@@ -14,12 +14,8 @@ class CreateInvFakturPenjualanDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_faktur_penjualan_detail', function (Blueprint $table) {
-            $table->bigIncrements('id_faktur_penjualan_detail');
-            $table->integer('id_faktur_penjualan');
-            $table->integer('quantity');
-            $table->integer('id_material')->nullable()->default(null);
-            $table->integer('harga_satuan');
-            $table->integer('total');
+            $table->id();
+            $table->timestamps();
         });
     }
 

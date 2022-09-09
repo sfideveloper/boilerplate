@@ -14,11 +14,8 @@ class CreateCrmTargetUnitTable extends Migration
     public function up()
     {
         Schema::create('crm_target_unit', function (Blueprint $table) {
-            $table->bigIncrements('id_target_unit');
-            $table->integer('id_customer');
-            $table->integer('id_unit');
-            $table->tinyInteger('status_utama',4);
-            $table->dateTime('registered');
+            $table->id();
+            $table->timestamps();
         });
     }
 

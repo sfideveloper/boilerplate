@@ -14,10 +14,8 @@ class CreateInvWriteOffPenjualanDetailTable extends Migration
     public function up()
     {
         Schema::create('inv_write_off_penjualan_detail', function (Blueprint $table) {
-            $table->bigIncrements('id_write_off_penjualan_detail');
-            $table->integer('id_write_off_penjualan');
-            $table->integer('quantity');
-            $table->integer('id_material');
+            $table->id();
+            $table->timestamps();
         });
     }
 

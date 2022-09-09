@@ -14,11 +14,8 @@ class CreateCrmTitipanTable extends Migration
     public function up()
     {
         Schema::create('crm_titipan', function (Blueprint $table) {
-            $table->bigIncrements('id_titipan_crm');
-            $table->integer('id_titipan');            
-            $table->string('nama_titipan',255)->nullable()->default(null);
-            $table->integer('id_unit');
-            $table->integer('nominal');
+            $table->id();
+            $table->timestamps();
         });
     }
 

@@ -14,10 +14,8 @@ class CreateInvSebaranMaterialTable extends Migration
     public function up()
     {
         Schema::create('inv_sebaran_material', function (Blueprint $table) {
-            $table->bigIncrements('id_sebaran');
-            $table->integer('id_material');
-            $table->integer('id_gudang');
-            $table->integer('jumlah');
+            $table->id();
+            $table->timestamps();
         });
     }
 

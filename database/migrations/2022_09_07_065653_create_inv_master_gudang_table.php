@@ -14,14 +14,8 @@ class CreateInvMasterGudangTable extends Migration
     public function up()
     {
         Schema::create('inv_master_gudang', function (Blueprint $table) {
-            $table->bigIncrements('id_gudang');
-            $table->integer('id_client');
-            $table->integer('id_proyek');
-            $table->string('kode_gudang');
-            $table->string('nama_gudang');
-            $table->string('lokasi_gudang');
-            $table->tinyInteger('status_aktif')->nullable()->default(1);
-            $table->dateTime('registered');
+            $table->id();
+            $table->timestamps();
         });
     }
 
