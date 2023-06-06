@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta name="author" content="Hypeople">
     <meta name="description" content="Responsive, Highly Customizable Dashboard Template" />
@@ -44,6 +45,22 @@
 
     <!-- Pages -->
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/pages/app-contact.css')}}">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/fontawesome.css')}}">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/icofont.css')}}">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/themify.css')}}">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/flag-icon.css')}}">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/feather-icon.css')}}">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/plugin/select2.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/plugin/select2-bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/plugin/select2-bootstrap4.min.css')}}">
 
     @yield('css')
 
@@ -158,6 +175,23 @@
     <!-- Customizer -->
     <script src="{{asset('app-assets/js/customizer.js')}}"></script>
 
+    <!-- Plugin -->
+    <script src="{{asset('app-assets/js/select2/select2.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/sweet-alert/sweetalert.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/tinymce/tinymce.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/slug.js')}}"></script>
+    <script type="text/javascript">
+        function delay(callback, ms) {
+            var timer = 0
+            return function() {
+                var context = this, args = arguments
+                clearTimeout(timer)
+                timer = setTimeout(function () {
+                    callback.apply(context, args)
+                }, ms || 0)
+            }
+        }
+    </script>
     @yield('js')
 
 </body>

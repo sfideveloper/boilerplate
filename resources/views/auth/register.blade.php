@@ -9,27 +9,43 @@
     </a>
     <h1 class="mb-0 mb-sm-24">Create Account</h1>
     <p class="mt-sm-8 mt-sm-0 text-black-60">Please sign up to your personal account if you want to use all our premium
-        products.</p>
+    products.</p>
 
-    <form class="mt-16 mt-sm-32 mb-8">
+    <form class="mt-16 mt-sm-32 mb-8" method="POST" action="{{route('register')}}">
+        @csrf
         <div class="mb-24">
-            <label for="registerUsername" class="form-label">Username :</label>
-            <input type="text" class="form-control" id="registerUsername">
+            <label for="registerUsername" class="form-label">Name :</label>
+            <input type="text" class="form-control @error('email') is-invalid @enderror" value="{{ old('name') }}" id="registerUsername" name="name">
+            @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
         </div>
 
         <div class="mb-24">
             <label for="registerEmail" class="form-label">E-mail :</label>
-            <input type="email" class="form-control" id="registerEmail">
+            <input type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" id="registerEmail" name="email">
+            @error('email')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
         </div>
 
         <div class="mb-24">
             <label for="registerPassword" class="form-label">Password :</label>
-            <input type="password" class="form-control" id="registerPassword">
+            <input type="password" class="form-control" id="registerPassword" name="password">
+            @error('password')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
         </div>
 
         <div class="mb-24">
             <label for="registerConfirmPassword" class="form-label">Confirm Password :</label>
-            <input type="password" class="form-control" id="registerConfirmPassword">
+            <input type="password" class="form-control" id="registerConfirmPassword" name="password_confirmation">
         </div>
 
         <button type="submit" class="btn btn-primary w-100">
